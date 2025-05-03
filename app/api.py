@@ -12,7 +12,7 @@ app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
 
 # Load the pre-trained model
-model = joblib.load("./src/car_price_model.pkl")
+model = joblib.load(r'C:\Users\mouad\car-price-predictor\src\car_price_model.pkl')
 
 # Define the feature names in the order expected by the model
 feature_names = [
