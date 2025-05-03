@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- site metas -->
+    <title>AutoValuate    </title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="template/css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="template/css/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="template/css/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="template/images/fevicon.png" type="image/gif">
+    <!-- font css -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&amp;family=Raleway:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="template/css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+  
+<style></style>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+ 
+    <!-- JS scripts -->
+<script src="%PUBLIC_URL%/template/js/jquery.min.js"></script>
+<script src="%PUBLIC_URL%/template/js/popper.min.js"></script>
+<script src="%PUBLIC_URL%/template/js/bootstrap.bundle.min.js"></script>
+<script src="%PUBLIC_URL%/template/js/jquery-3.0.0.min.js"></script>
+<script src="%PUBLIC_URL%/template/js/plugin.js"></script>
+<script src="%PUBLIC_URL%/template/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="%PUBLIC_URL%/template/js/custom.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  </head>
+ <body>
+  <!-- header section start -->
+  <div class="header_section">
+     <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <a class="navbar-brand" href="index.html" style="color: white; font-size: 20px; font-family: 'Poppins', sans-serif; font-weight: 600; text-decoration: none;">
+            AutoValuate
+          </a>
+          
+                     
+              
+           </div>
+        </nav>
+     </div>
+  </div>
+  <!-- header section end -->
+  
+  <!-- banner section start --> 
+  <div class="banner_section layout_padding">
+     <div class="container">
+        <div class="row">
+           <div class="col-md-6">
+              <div id="banner_slider" class="carousel slide" data-ride="carousel">
+                 <div class="carousel-inner">
+                    <div class="carousel-item active">
+                       <div class="banner_taital_main">
+                          <h1 class="banner_taital">Car Price <br><span style="color: #fe5b29;">Prediction Tool</span></h1>
+                          <p class="banner_text">Get an accurate estimate of your car's value based on market trends in the Moroccan market.</p>
+                          <div class="btn_main">
+                             <div class="contact_bt"><a href="#dev">Start</a></div>
+                          </div>
+                       </div>
+                    </div>
+                    
+                    
+                 </div>
+                 
+                 
+              </div>
+           </div>
+           
+        </div>
+     </div>
+  </div>
+  <!-- banner section end -->
+  <!-- about section start -->
+  
+  <!-- about section end -->
+  <div class="search_section" id="dev" style="padding-top: 10px ; padding-bottom: 25px;">
+     <div class="container">
+        <div class="row">
+           <div class="col-md-12">
+              <h1 class="search_taital">Get Your Car Estimate Now</h1>
+              <p class="search_text">Fill out the form below with complete information for an accurate result.</p>
+              <!-- select box section start -->
+<div class="container">
+   <div class="select_box_section">
+     <div class="select_box_main">
+       <form id="predictionForm" action="#" method="post">
+         <div class="row mb-4">
+            <div class="col-md-3">
+               <select name="Marque" class="form-control" required style="padding: 15px; font-size: 16px;">
+                 <option value="" disabled selected>Marque</option>
+                 <option>Renault</option>
+                 <option>Peugeot</option>
+                 <option>Volkswagen</option>
+                 <option>Dacia</option>
+                 <option>Mercedes-Benz</option>
+                 <option>Hyundai</option>
+                 <option>Fiat</option>
+                 <option>Ford</option>
+                 <option>Citroen</option>
+                 <option>BMW</option>
+                 <option>Audi</option>
+                 <option>Toyota</option>
+                 
+                 
+                 
+               </select>
+             </div>
+             
+           <div class="col-md-3">
+             <input type="text" name="Modèle" placeholder="Modèle" class="form-control" required style="padding: 15px; font-size: 16px;">
+           </div>
+           <div class="col-md-3">
+            <input type="number" name="Année" placeholder="Année"
+                   class="form-control" required min="1980" max="2025"
+                   style="padding: 15px; font-size: 16px;">
+          </div>
+          
+           <div class="col-md-3">
+            <select name="Type de carburant" class="form-control" required style="padding: 15px; font-size: 16px;">
+              <option value="" disabled selected hidden>Type de carburant</option>
+              <option value="Diesel">Diesel</option>
+              <option value="Essence">Essence</option>
+              <option value="Hybride">Hybride</option>
+              <option value="Electrique">Electrique</option>
+            </select>
+          </div>
+          
+         </div>
+ 
+         <div class="row mb-4">
+               
+            <div class="col-md-3">
+               <input type="number" name="Puissance fiscale" 
+                      placeholder="Puissance fiscale" 
+                      class="form-control" required 
+                      min="4" max="38"
+                      style="padding: 15px; font-size: 16px;">
+             </div>
+             
+             
+             <div class="col-md-3">
+               <input type="number" name="Kilométrage" placeholder="Kilométrage"
+                      class="form-control" required min="1"
+                      style="padding: 15px; font-size: 16px;">
+             </div>
+             
+           <div class="col-md-3">
+            <select name="Nombre de portes" class="form-control" required style="padding: 15px; font-size: 16px;">
+              <option value="" disabled selected hidden>Nombre de portes</option>
+              <option value="3">3</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          
+           <div class="col-md-3">
+            <select name="Première main" class="form-control" required style="padding: 15px; font-size: 16px;">
+              <option value="" disabled selected hidden>Première main</option>
+              <option value="Oui">Oui</option>
+              <option value="Non">Non</option>
+            </select>
+          </div>
+          
+         </div>
+ 
+         <div class="row">
+            <div class="col-md-3">
+               <select name="État" class="form-control" required style="padding: 15px; font-size: 16px;">
+                 <option value="" disabled selected hidden>État</option>
+                 <option value="Excellent">Excellent</option>
+                 <option value="Très bon">Très bon</option>
+                 <option value="Bon">Bon</option>
+                 <option value="Neuf">Neuf</option>
+                 <option value="Correct">Correct</option>
+                 <option value="Endommagé">Endommagé</option>
+               </select>
+             </div>
+             
+           <div class="col-md-3">
+            <select name="Boîte à vitesses" class="form-control" required style="padding: 15px; font-size: 16px;">
+              <option value="" disabled selected hidden>Boîte à vitesses</option>
+              <option value="Manuelle">Manuelle</option>
+              <option value="Automatique">Automatique</option>
+            </select>
+          </div>
+          
+           <div class="col-md-3">
+            <select name="Origine" class="form-control" required style="padding: 15px; font-size: 16px;">
+              <option value="" disabled selected hidden>Origine</option>
+              <option value="WW au Maroc">WW au Maroc</option>
+              <option value="Dédouanée">Dédouanée</option>
+              <option value="Importée neuve">Importée neuve</option>
+              <option value="Pas encore dédouanée">Pas encore dédouanée</option>
+            </select>
+          </div>
+          
+           <div class="col-md-3 d-flex align-items-end">
+             <button type="submit" class="form-control" style="padding: 15px; font-size: 18px; background-color: #ff5e00; color: white; border: none; border-radius: 8px; transition: background-color 0.3s;">
+               Predict Now
+             </button>
+           </div>
+         </div>
+       </form>
+     </div>
+   </div>
+ </div>
+ <!-- select box section end -->
+ 
+ 
+ <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+ <script>
+   // Add an event listener for the form submission
+   document.getElementById("predictionForm").addEventListener("submit", function(event) {
+     event.preventDefault(); // Prevent the form from submitting the default way
+ 
+     // Collect form data
+     const formData = new FormData(event.target);
+     const data = {};
+     formData.forEach((value, key) => {
+       data[key] = value;
+     });
+ 
+    // Call the API with the collected data
+axios.post('http://127.0.0.1:5000/predict', data)
+  .then(function(response) {
+    // Get the predicted price and format it
+    const predictedPrice = response.data.predicted_price;
+    const formattedPrice = (Math.round(predictedPrice / 1000) * 1000).toLocaleString(); // e.g., 54000
+
+    // Show it in the HTML instead of using alert
+    const priceContainer = document.getElementById('predictedPriceContainer');
+    priceContainer.innerHTML = `
+      <h3 class="gallery_taital">Your Car's Price:</h3>
+      <h3 class="gallery_taital">${formattedPrice} MAD</h3>
+    `;
+  })
+  .catch(function(error) {
+    console.error("Error making prediction:", error);
+    alert("Error in prediction. Please try again.");
+  });
+   });
+ </script>
+ 
+           </div>
+        </div>
+     </div>
+  </div>
+<!-- gallery section start -->
+<div class="gallery_section layout_padding" style="padding-top: 70px ; padding-bottom: 75px;">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+            <h1 class="gallery_taital" id="priceHeading">Car Price Prediction</h1>
+            <div id="predictedPriceContainer" style="text-align: center;">
+               <!-- Default message with waiting emoji -->
+               <p>Fill out the form and click "Predict Now" to get an estimated value for your car.</p>
+            </div>
+         </div>
+      </div>  
+   </div>
+</div>
+<!-- gallery section end -->
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+   document.getElementById("predictionForm").addEventListener("submit", function(event) {
+     event.preventDefault(); // Prevent the form from submitting the default way
+
+     // Show waiting message and emoji
+     const priceContainer = document.getElementById('predictedPriceContainer');
+     const priceHeading = document.getElementById('priceHeading');
+     priceHeading.style.display = 'none'; // Hide the "Car Price Prediction" heading
+     priceContainer.innerHTML = `<p>⏳ Calculating...</p>`; // Waiting emoji and message
+
+     // Collect form data
+     const formData = new FormData(event.target);
+     const data = {};
+     formData.forEach((value, key) => {
+       data[key] = value;
+     });
+
+     // Call the API with the collected data
+     axios.post('http://127.0.0.1:5000/predict', data)
+       .then(function(response) {
+         // Get the predicted price and format it
+         const predictedPrice = response.data.predicted_price;
+         const formattedPrice = (Math.round(predictedPrice / 1000) * 1000).toLocaleString(); // Round to the nearest 1000 and format with commas
+         
+         // Update the container with the predicted price
+         priceContainer.innerHTML = `<h3>Your Car's Price:</h3><h3 class="gallery_taital">${formattedPrice} MAD</h3>`;
+       })
+       .catch(function(error) {
+         console.error("Error making prediction:", error);
+         alert("Error in prediction. Please try again.");
+       });
+   });
+</script>
+
+
+
+ 
+  <!-- copyright section start -->
+  <div class="copyright_section">
+     <div class="container">
+        <div class="row">
+           <div class="col-sm-12">
+              <p class="copyright_text">© 2025 All Rights Reserved. Made with ❤️ by Mouad and Abdelkrim</p>
+           </div>
+        </div>
+     </div>
+  </div>
+  <!-- copyright section end -->
+  <!-- Javascript files-->
+  <script src="template/js/jquery.min.js"></script>
+  <script src="template/js/popper.min.js"></script>
+  <script src="template/js/bootstrap.bundle.min.js"></script>
+  <script src="template/js/jquery-3.0.0.min.js"></script>
+  <script src="template/js/plugin.js"></script>
+  <!-- sidebar -->
+  <script src="template/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="template/js/custom.js"></script>
+
+</body>
+</html>
