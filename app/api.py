@@ -21,10 +21,6 @@ feature_names = [
     'Boîte à vitesses', 'Origine'
 ]
 
-# Vercel calls this
-def handler(req):
-    return app(req)
-
 @app.route('/')
 def home():
     return "🚗 Welcome to the Car Price Prediction API!"
